@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html><body>
+    
+    <div>計算機練習</div>
+    <input style="font-size: 28px; text-align: right;"/>
+
+    <script>
+        function update( _v ) // input tag を更新する関数
+        {
+            document.querySelector( 'input' ).value = _v
+        }
+    
+        function append( _v ) // 数字ボタンが押されたので数字を後ろに追加する
+        {
+            document.querySelector( 'input' ).value += _v
+        }
+    </script>
+
+    <!-- <form action="http://localhost:8080/Calc/result.jsp" method="post"> -->
+    <table>
+        <tr>
+            <td>
+                <div class="v-align-middle">
+                    <button type="submit" value="AC" onclick="update( '' )">AC</button>
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <button type="submit" value="plusminus">+/-</button>
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <button type="submit" value="percent">%</button>
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="÷" onclick="append( '/' )">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="7" onclick="append( '7' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="8" onclick="append( '8' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="9" onclick="append( '9' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="×" onclick="append( '*' )">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="4" onclick="append( '4' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="5" onclick="append( '5' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="6" onclick="append( '6' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="-" onclick="append( '-' )">
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="1" onclick="append( '1' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="2" onclick="append( '2' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="3" onclick="append( '3' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="+" onclick="append( '+' )">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <div class="v-align-middle">
+                    <input type="button" value="0" onclick="append( '0' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="." onclick="append( '.' )">
+                </div>
+            </td>
+            <td>
+                <div class="v-align-middle">
+                    <input type="button" value="=">
+                </div>
+            </td>
+        </tr>
+    </table>
+<!--     </form> -->
+    
+</body></html>
