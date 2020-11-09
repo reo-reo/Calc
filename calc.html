@@ -3,7 +3,10 @@
 <html><body>
     
     <div>計算機練習</div>
-    <input style="font-size: 28px; text-align: right;"/>
+    <form action="http://localhost:8080/Calc/result.jsp" method="post">
+        <input name="formula" style="font-size: 28px; text-align: right;"/>
+    </form>
+    
 
     <script>
         function update( _v ) // input tag を更新する関数
@@ -124,7 +127,7 @@
             </td>
             <td>
                 <div class="v-align-middle">
-                    <input type="button" value="=">
+                    <button type="submit" value="=">
                 </div>
             </td>
         </tr>
